@@ -1,0 +1,18 @@
+name: Kamehameha
+version: '1.0.0'
+main: dev.dilly.kamehameha.Kamehameha
+api-version: '26.2'
+description: Charge up and fire a Kamehameha beam.
+commands:
+  kame:
+    description: Kamehameha admin command
+    usage: /kame <give [player]|reload>
+    aliases: [kamehameha]
+    permission: kamehameha.admin
+permissions:
+  kamehameha.use:
+    description: Lets you charge and fire the Kamehameha
+    default: true
+  kamehameha.admin:
+    description: /kame give and /kame reload
+    default: op

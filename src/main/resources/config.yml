@@ -1,0 +1,28 @@
+# Text uses MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+item:
+  material: NETHER_STAR
+  name: "<gradient:aqua:blue><bold>Kamehameha"
+  lore:
+    - "<gray>Hold right click to charge."
+    - "<gray>Let go to fire!"
+
+charge:
+  max-ticks: 60          # full power after this long (20 ticks = 1 second)
+  min-ticks: 15          # let go before this and it fizzles (no cooldown used)
+  cooldown-seconds: 10
+
+beam:
+  range: 40              # at full charge (a weak charge goes about half as far)
+  base-duration-ticks: 20
+  extra-duration-ticks: 30   # added at full charge
+  width: 0.9             # beam radius at full charge
+  damage: 8.0            # per hit at full charge (2 = one heart)
+  damage-interval-ticks: 10
+  damage-players: true   # false = only mobs get hurt
+  push: 0.45             # shoves things along the beam
+  block-damage: false    # true = the beam's end explodes and breaks blocks (can hurt YOU if you aim at a close wall)
+  explosion-power: 3.0
+
+messages:
+  shout: "<aqua><name> <white>shouts: <bold><gradient:aqua:blue>KA-ME-HA-ME-HAAAAA!!!"
